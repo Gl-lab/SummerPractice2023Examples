@@ -1,0 +1,16 @@
+/*.suo
+/*.user
+bin/
+obj/
+/TestResults
+/env
+/.git
+/.vs
+/packages
+*.csproj.user
+pkg/
+wwwroot
+NugetPackage
+/.idea
+*.pubxml.user
+
