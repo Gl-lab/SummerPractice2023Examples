@@ -10,9 +10,12 @@ namespace ConsoleApp1;
 internal class ApplicationContext : DbContext
 {
     public DbSet<User> Users => Set<User>();
+    public DbSet<Post> Posts => Set<Post>();
+    
+
     public ApplicationContext()
     {
-        Database.EnsureDeleted();
+        //Database.EnsureDeleted();
         Database.EnsureCreated();
     }
 

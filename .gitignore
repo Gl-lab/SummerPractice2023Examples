@@ -13,4 +13,6 @@ wwwroot
 NugetPackage
 /.idea
 *.pubxml.user
-
+*.db
+*.db-shm
+*.db-wal
