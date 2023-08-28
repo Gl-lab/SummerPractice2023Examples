@@ -2,7 +2,6 @@
 using Domain.Entity;
 using Domain.Repositories;
 
-
 namespace Infrastucture;
 internal class UserRepository: IUserRepository
 {
@@ -18,7 +17,17 @@ internal class UserRepository: IUserRepository
         _context.Users.Add(user);
     }
 
-    public List<User> GetUsers()
+    public void RemoveUser( User user )
+    {
+        _context.Users.Remove( user );
+    }
+
+    public User? GetUser( int userId )
+    {
+        return _context.Users.FirstOrDefault( x => x.Id == userId );
+    }
+
+    public List<User> GetAllUsers()
     {
         return _context.Users.ToList();
     }

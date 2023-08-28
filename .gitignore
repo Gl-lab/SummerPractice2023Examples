@@ -9,7 +9,6 @@ obj/
 /packages
 *.csproj.user
 pkg/
-wwwroot
 NugetPackage
 /.idea
 *.pubxml.user

@@ -1,5 +1,3 @@
-
-using Domain.Repositories;
 using Infrastucture;
 
 namespace Web;
@@ -34,6 +32,9 @@ public class Program
 
         app.MapControllers();
 
+        app.UseDefaultFiles();
+        app.UseStaticFiles();
+        
         app.Run();
     }
 }
