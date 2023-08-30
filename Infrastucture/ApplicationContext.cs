@@ -7,9 +7,10 @@ namespace ConsoleApp1;
 internal class ApplicationContext : DbContext, IUnitOfWork
 {
     public DbSet<User> Users => Set<User>();
+    public DbSet<Post> Posts => Set<Post>();
     public ApplicationContext()
     {
-        Database.EnsureCreated();
+        //Database.EnsureCreated();
     }
 
     protected override void OnConfiguring( DbContextOptionsBuilder optionsBuilder )

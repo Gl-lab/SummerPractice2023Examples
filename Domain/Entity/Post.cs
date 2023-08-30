@@ -9,4 +9,5 @@ public class Post
 {
     public int Id { get; set; }
     public string Header { get; set; }
+    public User Author { get; set; }
 }
