@@ -10,6 +10,7 @@ public static  class DependencyInjection
     {
         services.AddDbContext<ApplicationContext>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IPostRepository, PostRepository>();
         services.AddScoped<IUnitOfWork>( sp => sp.GetService<ApplicationContext>() );
       
     }

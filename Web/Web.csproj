@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="helloapp.db" />
     <None Remove="helloapp.db-shm" />
     <None Remove="helloapp.db-wal" />
   </ItemGroup>
